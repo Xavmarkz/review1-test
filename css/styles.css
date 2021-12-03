@@ -1,5 +1,5 @@
 :root{
-    --primary-color:#4b84ce;
+    --primary-color:#0092d6;
     --secondary-color:#9d9d9d;
     --bar-color:#f7f7f7;
 }
@@ -60,7 +60,9 @@ body{
     width: auto;
     display: flex;
     align-items: center;
-    
+}
+.--opacity{
+    opacity: 30%;
 }
 .rankStars-container{
     display: flex;
@@ -126,9 +128,13 @@ body{
     padding: 10px 25px;
     display: flex;
     align-items: center;
-    border: 3px solid #000000;
+    border: 2px solid var(--primary-color);
     background-color: #fff;
-    box-shadow: 8px 8px 22px -2px #a3a3a396;
+    cursor: pointer;
+    
+}
+.btn-shadow{
+    box-shadow: 8px 8px 22px -2px #b2dcf073;
 }
 .button-icon{
     width: 15px;
@@ -136,5 +142,6 @@ body{
 }
 .button-text{
     text-decoration: none;
-    color:#000000;
+    color: var(--primary-color);
+    background-color: none;
 }
