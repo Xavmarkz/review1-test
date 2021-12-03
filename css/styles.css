@@ -1,0 +1,140 @@
+:root{
+    --primary-color:#4b84ce;
+    --secondary-color:#9d9d9d;
+    --bar-color:#f7f7f7;
+}
+*{
+    padding: 0;
+}
+body{
+    margin:0;
+}
+
+.reviews{
+    display: flex;
+    width: 95%;
+    margin: 40px auto;
+}
+.score-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+}
+.score-total{
+    width: 250px;
+    border-right: 1px solid #d3d3d385;
+    margin-right: 30px;
+
+}
+.score-total-result{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.score-number{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0 10px 0 0; 
+    height: 50px;
+}
+.score-stars-container{
+    height: fit-content;
+}
+.score-stars{
+    color: var(--primary-color);
+}
+.score-text{
+    margin: 0;
+}
+.rank-container{
+    width: 300px;
+    padding-right: 5px;
+    border-right: 1px solid #d3d3d385;
+ 
+}
+.rank-items{
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.rankStars-container{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin-right:20px ;
+}
+.rank-stars{
+    display: block;
+    width: 20px;
+    color: var(--secondary-color);
+}
+.--blank{
+    color: #fff;
+}
+.rank-bar{
+    height: 15px;
+    width: 150px;
+    background-color: var(--bar-color);
+    margin-right: 8px;
+}
+.first-bar::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 15px;
+    width: 140px;
+}
+.second-bar::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 15px;
+    width: 20px;
+}
+.third-bar::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 15px;
+    width: 5px;
+}
+.rank-text{
+    color: var(--secondary-color);
+    margin: 0;
+}
+.videos{
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+.video-img{
+    width: 100%;
+    height: 100%;
+}
+.buttons-container{
+    flex-grow: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.button{
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    border: 3px solid #000000;
+    background-color: #fff;
+    box-shadow: 8px 8px 22px -2px #a3a3a396;
+}
+.button-icon{
+    width: 15px;
+    margin-right: 5px;
+}
+.button-text{
+    text-decoration: none;
+    color:#000000;
+}
